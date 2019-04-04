@@ -32,19 +32,31 @@ Sign in or register for a heroku account.
 Add a new Heroku project in project settings, reveal vars and then paste in the proper prod credentials in there and the variable names in the prod.js file.
 ```
 
-And repeat
+<!-- And repeat
 
 ```
 until finished
-```
+``` -->
 
 End with an example of getting some data out of the system or using it for a little demo
 
+## Running in dev mode
+
+To run the file locally at port=5000. Use the following command. Nodemon is handling watch.
+
+```
+npm run dev
+```
+
 ## Running the tests
 
-Explain how to run the automated tests for this system
+You can run tests that show if the pages have certain components inside of them.
 
-### Break down into end to end tests
+```
+npm run test
+```
+
+<!--### Break down into end to end tests
 
 Explain what these tests test and why
 
@@ -92,4 +104,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - Hat tip to anyone who's code was used
 - Inspiration
-- etc
+- etc -->
