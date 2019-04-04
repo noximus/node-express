@@ -34,8 +34,6 @@ passport.use(
               .save()
               .then(user => done(null, user));
       });
-
-      // new User({ googleId: profile.id }).save();
     }
   )
 );
