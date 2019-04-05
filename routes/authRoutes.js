@@ -8,11 +8,7 @@ module.exports = app => {
     })
   );
 
-  app.get("/auth/google/callback", checkUserAuth, passport.authenticate("google"));
-  function checkUserAuth(req,res,next){
-    if(req.session.user) return next();
-    return next(new NotAuthorizedError())
-  }
+  app.get("/auth/google/callback", passport.authenticate("google"));
 
   app.get("/api/logout", (req, res) => {
     req.logout();
