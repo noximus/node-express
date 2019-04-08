@@ -4,6 +4,7 @@ module.exports = app => {
   app.get("/", (req, res) => {
     hi: "buddy"; 
   });
+  
   app.get(
     "/auth/google",
     passport.authenticate("google", {
